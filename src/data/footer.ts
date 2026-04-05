@@ -24,7 +24,12 @@ export interface FooterContact {
 }
 
 export const footerContact: FooterContact = {
+  addressTitle: 'Bethy AI',
   address: 'AI-guided home repair for people who want clear next steps.',
+  contactTitle: 'Start here',
+  phone: 'Join waitlist',
+  phoneHref: '/#waitlist',
+  email: 'hello@bethy.ai',
   emailHref: 'mailto:hello@bethy.ai',
 };
 
