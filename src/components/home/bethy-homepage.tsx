@@ -229,8 +229,8 @@ const FeaturePreview = ({
             <div className="rounded-[18px] border border-opai-red/16 bg-opai-red/7 p-4">
               <div className="mb-2 h-2.5 w-24 rounded-full bg-opai-red/30" />
               <div className="flex gap-2">
-                <div className="h-8 w-20 rounded-xl bg-white/8" />
-                <div className="h-8 w-16 rounded-xl bg-white/6" />
+                <div className="h-8 flex-1 rounded-xl bg-white/8" />
+                <div className="h-8 w-12 flex-none rounded-xl bg-white/6" />
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@ const BethyHomepage = () => {
           <span className="border-stroke-1/15 bg-background-6/80 font-ibm-plex-mono text-tagline-4 inline-flex rounded-full border px-4 py-2 uppercase tracking-[0.2em] text-white/65">
             A softer kind of home repair AI
           </span>
-          <h1 className="font-sora text-sora-heading-3 mt-6 text-white md:text-sora-heading-2 lg:text-[4.5rem] lg:leading-[1.08] lg:tracking-[-0.05em]">
+          <h1 className="font-sora text-[2rem] leading-[1.15] mt-6 text-white sm:text-sora-heading-3 md:text-sora-heading-2 lg:text-[4.5rem] lg:leading-[1.08] lg:tracking-[-0.05em]">
             Virtual repair and assembly assistant
           </h1>
           <p className="font-inter-tight text-tagline-1 mx-auto mt-6 max-w-180 text-white/65">
@@ -329,7 +329,7 @@ const BethyHomepage = () => {
           </div>
         </div>
 
-        <div className="border-stroke-1/12 bg-background-6/50 mt-14 rounded-[28px] border px-6 py-5">
+        <div className="border-stroke-1/12 bg-background-6/50 mt-14 overflow-hidden rounded-[28px] border px-6 py-5">
           <p className="font-ibm-plex-mono text-tagline-4 mb-4 uppercase tracking-[0.2em] text-white/45">
             Trusted by early testers
           </p>
@@ -352,16 +352,16 @@ const BethyHomepage = () => {
         {productFeatures.map((feature, index) => (
           <article
             key={feature.eyebrow}
-            className="border-stroke-1/10 bg-background-6/70 grid gap-8 rounded-4xl border p-6 lg:grid-cols-2 lg:items-center lg:gap-12 lg:p-10"
+            className="border-stroke-1/10 bg-background-6/70 grid gap-8 overflow-hidden rounded-4xl border p-5 sm:p-6 lg:grid-cols-2 lg:items-center lg:gap-12 lg:p-10"
           >
-            <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-              <p className="font-ibm-plex-mono text-tagline-4 uppercase tracking-[0.2em] text-opai-green/85">
+            <div className={`min-w-0 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+              <p className="font-ibm-plex-mono text-tagline-4 uppercase tracking-[0.15em] text-opai-green/85">
                 {feature.eyebrow}
               </p>
-              <h3 className="font-sora text-sora-heading-5 mt-4 max-w-130 text-white md:text-sora-heading-4">
+              <h3 className="font-sora text-sora-heading-5 mt-4 text-white md:text-sora-heading-4">
                 {feature.title}
               </h3>
-              <p className="font-inter-tight text-tagline-1 mt-4 max-w-135 text-white/65">
+              <p className="font-inter-tight text-tagline-1 mt-4 text-white/65">
                 {feature.description}
               </p>
               <ul className="mt-6 space-y-3">
@@ -377,7 +377,7 @@ const BethyHomepage = () => {
             <FeaturePreview
               previewTitle={feature.previewTitle}
               graphic={feature.graphic}
-              className={index % 2 === 1 ? 'lg:order-1' : ''}
+              className={`min-w-0 ${index % 2 === 1 ? 'lg:order-1' : ''}`}
             />
           </article>
         ))}
@@ -405,7 +405,7 @@ const BethyHomepage = () => {
           {valueCards.map((card) => (
             <article
               key={card.title}
-              className="border-stroke-1/10 from-background-6 to-background-4 rounded-[28px] border bg-linear-to-b p-6"
+              className="border-stroke-1/10 from-background-6 to-background-4 overflow-hidden rounded-[28px] border bg-linear-to-b p-6"
             >
               <div className="mb-6 h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,rgba(93,220,246,0.22),rgba(255,107,81,0.3))]" aria-hidden />
               <h3 className="font-sora text-sora-heading-6 text-white">{card.title}</h3>
@@ -420,7 +420,7 @@ const BethyHomepage = () => {
 
     <section id="system" className="pb-20 md:pb-28 lg:pb-36">
       <div className="main-container">
-        <div className="border-stroke-1/10 bg-background-6/65 rounded-4xl border p-6 md:p-8 lg:p-10">
+        <div className="border-stroke-1/10 bg-background-6/65 overflow-hidden rounded-4xl border p-5 sm:p-6 md:p-8 lg:p-10">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div>
               <p className="font-ibm-plex-mono text-tagline-4 uppercase tracking-[0.2em] text-opai-green/85">
@@ -430,7 +430,7 @@ const BethyHomepage = () => {
                 Built for guided repair and assembly
               </h2>
             </div>
-            <p className="font-inter-tight text-tagline-1 max-w-140 text-white/65 lg:ml-auto">
+            <p className="font-inter-tight text-tagline-1 text-white/65 lg:ml-auto lg:max-w-140">
               Instead of a founder gallery, this structure explains the product as an orchestration
               of diagnosis, voice, safety, and memory. That makes the landing page about the
               workflow homeowners and tradespeople actually buy into.
@@ -441,15 +441,15 @@ const BethyHomepage = () => {
             {systemCards.map((card) => (
               <article
                 key={card.title}
-                className="border-stroke-1/10 bg-background-5/80 rounded-[26px] border p-6"
+                className="border-stroke-1/10 bg-background-5/80 overflow-hidden rounded-[26px] border p-5 sm:p-6"
               >
-                <p className="font-ibm-plex-mono text-tagline-4 uppercase tracking-[0.18em] text-opai-green/85">
+                <p className="font-ibm-plex-mono text-tagline-4 wrap-break-word uppercase tracking-[0.15em] text-opai-green/85">
                   {card.eyebrow}
                 </p>
                 <h3 className="font-sora text-sora-heading-6 mt-4 text-white md:text-[1.5rem] md:leading-[1.35]">
                   {card.title}
                 </h3>
-                <p className="font-inter-tight text-tagline-2 mt-3 max-w-115 text-white/65">
+                <p className="font-inter-tight text-tagline-2 mt-3 text-white/65">
                   {card.description}
                 </p>
               </article>
