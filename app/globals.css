@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tech-bg: #030303;
+  --color-tech-text: #fafafa;
+  --color-tech-muted: #888888;
+}
+
+html,
+body {
+  background-color: var(--color-tech-bg);
+  color: var(--color-tech-text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Firefox scrollbar support */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+/* =========================================
+   WebKit Scrollbar Configuration
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.25);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.7);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(136, 136, 136, 1);
+}
+
+/* =========================================
+   Utility Animations
+========================================= */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
