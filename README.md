@@ -1,13 +1,13 @@
 # Bethy
 
-Bethy is the AI property manager for UK landlords and letting agents. It answers your phone, triages tenant maintenance reports, sources a tradesperson, and only asks you to approve the cost before anything gets booked. This repo is the marketing/landing site.
+Bethy is the AI property manager for landlords and letting agents. It answers your phone, triages tenant maintenance reports, sources a tradesperson, and only asks you to approve the cost before anything gets booked. This repo is the marketing/landing site.
 
 ## Key Features
 
 - **AI Phone Receptionist:** Forward your business number to a dedicated Bethy number and every tenant call gets answered, day or night.
 - **Maintenance Automation:** Reports are triaged by category and priority, matched to a tradesperson, and scheduled — landlord approval required before booking.
 - **Ask Bethy:** An in-app assistant that answers portfolio questions ("What needs my approval right now?") using only real workspace data.
-- **UK Integrations:** Connects to Xero, GoCardless, the EPC Register, and OpenRent/Rightmove/SpareRoom.
+- **Integrations:** Connects to Xero, GoCardless, the EPC Register, and OpenRent/Rightmove/SpareRoom.
 
 ## Tech Stack
 

@@ -21,8 +21,8 @@ export default function Faq() {
       a: "No. Forward your existing business number to your Bethy number — missed calls only, or everything — and Bethy picks up under your name.",
     },
     {
-      q: "Is Bethy only for the UK?",
-      a: "Yes, today. Bethy is built around UK lettings — GBP pricing, UK phone numbers, and integrations with Xero, GoCardless, the EPC Register, and OpenRent.",
+      q: "Which markets does Bethy work in?",
+      a: "Bethy is live for landlords and letting agents today, with more markets on the way as we expand. Pricing is shown in GBP, and Bethy integrates with Xero, GoCardless, the EPC Register, and OpenRent.",
     },
     {
       q: "What happens to my data?",

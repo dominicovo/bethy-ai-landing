@@ -77,7 +77,7 @@ export default function Enterprise() {
               className="text-neutral-500 font-light leading-relaxed mb-10"
             >
               Don't rip out your accounting or rent collection. Bethy connects
-              directly to Xero, GoCardless, and the tools UK landlords and
+              directly to Xero, GoCardless, and the tools landlords and
               letting agents already run their business on.
             </motion.p>
 
@@ -188,7 +188,7 @@ export default function Enterprise() {
             className="flex flex-wrap items-center justify-center md:justify-start gap-8 md:gap-16 pt-8 "
           >
             {[
-              "UK GDPR Aligned",
+              "GDPR Aligned",
               "Workspace Data Isolation",
               "Encrypted Calls & Messages",
               "Payments Via GoCardless & Xero",

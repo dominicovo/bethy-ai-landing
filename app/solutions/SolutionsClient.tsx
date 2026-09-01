@@ -19,7 +19,7 @@ const steps = [
   {
     num: "01.",
     title: "Forward Your Number",
-    desc: "Pick a plan and forward your existing business line to a dedicated Bethy UK number. The four-step Activate flow — Plan, Agent, Forward, Test — takes minutes, with no new hardware and nothing for tenants to install.",
+    desc: "Pick a plan and forward your existing business line to a dedicated Bethy number. The four-step Activate flow — Plan, Agent, Forward, Test — takes minutes, with no new hardware and nothing for tenants to install.",
     icon: PhoneCall,
     glow: "bg-blue-600/20",
     color: "text-blue-500",

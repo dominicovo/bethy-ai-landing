@@ -59,7 +59,7 @@ export default function UseCases() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-medium tracking-tighter text-[#FAFAFA] mb-12 leading-[1.1]"
           >
-            Built for how UK <br />
+            Built for how <br />
             lettings actually works.
           </motion.h2>
 

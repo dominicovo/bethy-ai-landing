@@ -16,20 +16,20 @@ const geistMono = Geist_Mono({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bethy.ai";
 const siteName = "Bethy";
 const siteDescription =
-  "Bethy is the AI property manager for UK landlords and letting agents — it answers the phone, triages repairs, sources tradespeople, and only asks you to approve the cost.";
+  "Bethy is the AI property manager for landlords and letting agents — it answers the phone, triages repairs, sources tradespeople, and only asks you to approve the cost.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Bethy | AI Property Management for UK Landlords",
+    default: "Bethy | AI Property Management for Landlords",
     template: "%s | Bethy",
   },
   description: siteDescription,
   keywords: [
     "AI property manager",
     "AI receptionist for landlords",
-    "letting agent software UK",
-    "property management software UK",
+    "letting agent software",
+    "property management software",
     "AI maintenance management",
     "landlord AI assistant",
     "tenant call answering service",
@@ -56,20 +56,20 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteUrl,
     siteName,
-    title: "Bethy | AI Property Management for UK Landlords",
+    title: "Bethy | AI Property Management for Landlords",
     description: siteDescription,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Bethy — the AI property manager for UK landlords and letting agents",
+        alt: "Bethy — the AI property manager for landlords and letting agents",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bethy | AI Property Management for UK Landlords",
+    title: "Bethy | AI Property Management for Landlords",
     description: siteDescription,
     images: ["/opengraph-image"],
   },
@@ -83,10 +83,6 @@ const jsonLd = {
   operatingSystem: "Web",
   description: siteDescription,
   url: siteUrl,
-  areaServed: {
-    "@type": "Country",
-    name: "United Kingdom",
-  },
   offers: [
     {
       "@type": "Offer",

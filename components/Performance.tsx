@@ -144,7 +144,7 @@ export default function Performance() {
                 <AnimatedCounter end={4} />
               </div>
               <p className="text-xs font-mono uppercase tracking-widest text-neutral-500 group-hover:text-black transition-colors">
-                UK Integrations Built In
+                Integrations Built In
               </p>
             </div>
           </motion.div>

@@ -58,8 +58,8 @@ export default function PricingPage() {
       a: "No. You keep your existing business number — you simply forward it to a dedicated Bethy number. Tenants call the number they already have; there's nothing new to remember and nothing for them to install.",
     },
     {
-      q: "Does Bethy work outside the UK?",
-      a: "Bethy is built specifically for the UK lettings market — UK phone numbers, UK compliance fields like EPC ratings and council tax bands, and UK integrations like GoCardless and Xero. It isn't available outside the UK today.",
+      q: "Which markets does Bethy work in?",
+      a: "Bethy is live for landlords and letting agents today, with more markets on the way as we expand. Pricing is shown in GBP, and Bethy integrates with compliance and accounting tools like EPC ratings, GoCardless, and Xero.",
     },
     {
       q: "What happens to my data?",

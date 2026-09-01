@@ -115,14 +115,15 @@ export default function PrivacyPolicy() {
           {/* Section 4 */}
           <section>
             <h2 className="text-xl font-medium text-white mb-4">
-              4. UK GDPR & Data Protection
+              4. Data Protection
             </h2>
             <p>
-              Bethy is built for UK landlords and letting agents, and we
-              process personal data in accordance with the UK GDPR and the
-              Data Protection Act 2018. You retain control over the tenant and
-              property data in your workspace, and we process it only as
-              needed to provide the Services to you.
+              Bethy is built for landlords and letting agents, and we process
+              personal data in accordance with applicable data protection
+              laws in the markets we serve, including the UK GDPR and the
+              Data Protection Act 2018 where relevant. You retain control
+              over the tenant and property data in your workspace, and we
+              process it only as needed to provide the Services to you.
             </p>
           </section>
 
@@ -157,9 +158,7 @@ export default function PrivacyPolicy() {
               Protection Officer (DPO) at:
             </p>
             <p className="mt-4 font-mono text-white/70">
-              Email: privacy@bethy.com <br />
-              Address: Bethy Ltd, Legal Dept, London, United Kingdom.
-            </p>
+              Email: team@bethy.com       </p>
           </section>
         </motion.div>
       </div>
