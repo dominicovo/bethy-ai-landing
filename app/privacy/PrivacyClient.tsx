@@ -158,7 +158,7 @@ export default function PrivacyPolicy() {
               Protection Officer (DPO) at:
             </p>
             <p className="mt-4 font-mono text-white/70">
-              Email: team@bethy.com       </p>
+              Email: team@bethy.ai </p>
           </section>
         </motion.div>
       </div>
