@@ -81,7 +81,12 @@ export default function Enterprise() {
               letting agents already run their business on.
             </motion.p>
 
-            <Link href="/pricing">
+            {/* TEMP: pricing page disabled — was href="/pricing" */}
+            <Link
+              href="https://calendly.com/dom9ovo/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

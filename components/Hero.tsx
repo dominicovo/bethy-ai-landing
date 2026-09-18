@@ -69,7 +69,13 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
           >
             {/* --- ACTION BUTTONS --- */}
-            <Link href="/pricing" className="w-full sm:w-auto">
+            {/* TEMP: pricing page disabled — was href="/pricing" */}
+            <Link
+              href="https://calendly.com/dom9ovo/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
               <Button className="w-full px-8 py-4 rounded-none text-xs font-semibold uppercase tracking-widest hover:bg-[#CCCCCC] transition-colors hover:scale-[1.02] duration-300">
                 Start Free Trial
               </Button>

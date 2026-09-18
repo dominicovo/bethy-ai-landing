@@ -5,7 +5,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bethy.ai";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "", priority: 1, changeFrequency: "weekly" as const },
-    { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const },
+    // { path: "/pricing", priority: 0.9, changeFrequency: "weekly" as const }, // TEMP: pricing page disabled
     { path: "/solutions", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/performance", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/about", priority: 0.6, changeFrequency: "monthly" as const },

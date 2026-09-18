@@ -6,7 +6,7 @@ import Solutions from "@/components/Solutions";
 import Performance from "@/components/Performance";
 import About from "@/components/About";
 import Enterprise from "@/components/Enterprise";
-import Pricing from "@/components/Pricing";
+// import Pricing from "@/components/Pricing"; // TEMP: pricing section disabled
 import Faq from "@/components/Faq";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       <Solutions />
       <Performance />
       <About />
-      <Pricing />
+      {/* <Pricing /> */} {/* TEMP: pricing section disabled */}
       <Faq />
     </main>
   );

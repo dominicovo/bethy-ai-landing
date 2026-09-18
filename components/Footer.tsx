@@ -25,7 +25,7 @@ export default function Footer() {
       links: [
         { name: "About Us", href: "/about" },
         { name: "Performance", href: "/performance" },
-        { name: "Pricing", href: "/pricing" },
+        // { name: "Pricing", href: "/pricing" }, // TEMP: pricing page disabled
         { name: "Solutions", href: "/solutions" },
       ],
     },
