@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -11,8 +12,11 @@ import {
   Users,
 } from "lucide-react";
 import Button from "./Button";
+import TryBethyModal from "./TryBethyModal";
 
 export default function Hero() {
+  const [tryOpen, setTryOpen] = useState(false);
+
   // --- DATA: MARQUEE BRANDS ---
   const brands = [
     { name: "XERO", icon: Landmark },
@@ -69,17 +73,12 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
           >
             {/* --- ACTION BUTTONS --- */}
-            {/* TEMP: pricing page disabled — was href="/pricing" */}
-            <Link
-              href="https://calendly.com/dom9ovo/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto"
+            <Button
+              onClick={() => setTryOpen(true)}
+              className="w-full sm:w-auto px-8 py-4 rounded-none text-xs font-semibold uppercase tracking-widest hover:bg-[#CCCCCC] transition-colors hover:scale-[1.02] duration-300"
             >
-              <Button className="w-full px-8 py-4 rounded-none text-xs font-semibold uppercase tracking-widest hover:bg-[#CCCCCC] transition-colors hover:scale-[1.02] duration-300">
-                Start Free Trial
-              </Button>
-            </Link>
+              Try Bethy
+            </Button>
 
             <Link
               href="https://calendly.com/dom9ovo/30min"
@@ -114,6 +113,9 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+      {/* --- TRY BETHY MODAL --- */}
+      <TryBethyModal open={tryOpen} onClose={() => setTryOpen(false)} />
     </section>
   );
 }

@@ -9,8 +9,6 @@ import {
   Lock,
   ServerCrash,
 } from "lucide-react";
-import Button from "./Button";
-import Link from "next/link";
 
 export default function Enterprise() {
   // --- DATA FOR ECOSYSTEM ---
@@ -80,23 +78,6 @@ export default function Enterprise() {
               directly to Xero, GoCardless, and the tools landlords and
               letting agents already run their business on.
             </motion.p>
-
-            {/* TEMP: pricing page disabled — was href="/pricing" */}
-            <Link
-              href="https://calendly.com/dom9ovo/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="w-fit"
-              >
-                <Button variant="black">Start Free Trial</Button>
-              </motion.div>
-            </Link>
           </div>
 
           {/* RIGHT: FRAMEWORK GRID */}
